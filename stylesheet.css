@@ -29,3 +29,16 @@ p {
     max-width: 35em;
     padding: 2em;
 }
+
+.container {
+    background-color:olive;
+    
+    width: 100vw;
+}
+
+.load__bar {
+    height: .2em;
+    width: 0%;
+    background-color: var(--lightTomato);
+    
+}

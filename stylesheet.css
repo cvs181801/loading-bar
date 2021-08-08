@@ -32,14 +32,14 @@ p {
 }
 
 .container {
-    background-color:olive;
-    
+    background-color:var(--navy);
     width: 100vw;
+    position: relative;
 }
 
 .load__bar {
-    height: .2em;
+    height: .3em;
     width: 0%;
     background-color: var(--lightTomato);
-    
+    top: 0;
 }

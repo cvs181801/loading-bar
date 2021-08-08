@@ -1,0 +1,15 @@
+:root {
+    --ff-main: fantasy;
+    --navy: rgb(2, 2, 100);
+    --lightTomato: rgb(248, 121, 98);
+}
+
+body {
+    color:oldlace;
+    font-family: var(--ff-main);
+    background-color: var(--navy);
+}
+
+.load__bar {
+    background-color: var(--lightTomato);
+}

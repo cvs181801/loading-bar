@@ -28,13 +28,19 @@ let width = 0;
 
 //we can try another method
 
-body.onscroll = loadBar;
 
-console.log(loadBar);
+document.onscroll = function(e) {
+    if (width < 100) {
+    (width ++);
+    loadingBar.style.width = width + "%";
+    } else if (width === 100) {
+    console.log(e.target.scrollTop);
+    (width - 2);
+    loadingBar.style.width = width + "%";
+    }
 
-function loadBar(e) {
-    //e.target.scrollTop = width + "%";
-    console.log(e);
+    console.log("yay");
+    console.log(width);
 }
 
 

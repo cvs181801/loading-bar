@@ -39,7 +39,7 @@ document.onscroll = function(e) {
     loadingBar.style.width = width + "%";
     }
 
-    console.log("yay");
+    console.log("yay it worked");
     console.log(width);
 }
 

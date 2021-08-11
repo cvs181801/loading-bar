@@ -3,7 +3,7 @@
 const loadingBar = document.querySelector(".load__bar");
 const title = document.getElementById("title");
 const barContainer = document.querySelector(".container");
-const body = document.getElementsByTagName("body");
+//const body = document.getElementsByTagName("body");
 
 
 
@@ -62,7 +62,7 @@ let width = 0;
 
 // using the 'hack' to find height of the browser/client
 let body = document.body;
-let html = documentElement;
+let html = document.documentElement; //returns the element that is the root element of the documents
 
 let height = Math.max(
     body.scrollHeight,
@@ -71,6 +71,7 @@ let height = Math.max(
     html.scrollHeight,
     html.offsetHeight
 );
+//(finds the largest of all these)
 
 const activeLoadBar = () => {
     let scrollFromTop = (html.scrollTop || body.scrollTop) + html.clientHeight;
